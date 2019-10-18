@@ -15,22 +15,24 @@
         <div class="navbar">
             <div><a href="#about">About</a></div>
             <div><a href="#menu">Cuisine</a></div>
-            <div class="head"><a href="#head"><img src="./assets/logo.png"></i></i></a></div>
+            <div class="head"><a href="#head"><img src="./assets/logo.png"></a></div>
+            
             <div><a href="#menu">Menu</a></div>
             <div><a href="#location">Location</a></div>
         </div>
     </div>
     <!-- The video -->
     <video autoplay muted loop id="myVideo">
-            <source src="./assets/food.mov" type="video/mp4">
-          </video>
-          <div class="cover"></div>
-          <!-- Optional: some overlay text to describe the video -->
-          <div class="content">
-            <h1>Heading</h1>
-            <p>Lorem ipsum...</p>
-         
-          </div>
+        <source src="./assets/food.mov" type="video/mp4">
+            <div class="cover"></div>
+    </video>
+    
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="content">
+        <h1>Delicatus</h1>
+        <p>Si pauper fueris, foras!</p>
+    
+    </div>
     <div class="oursite">
         <div class="main">
             <section id="about">
@@ -112,6 +114,11 @@
                 </div>   
             </section>
         </div>
+        <audio autoplay>
+            <source src="assets/sounds.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        <audio id="audio"src="assets/sounds.mp3" preload="auto"loop="loop"></audio>
     </div>      
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
