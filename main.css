@@ -1,18 +1,23 @@
 html { 
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
+    scroll-behavior: smooth;
 }
 *, * ::before, *::after { 
     box-sizing: inherit;
 }
 body {font-family: sans-serif;
 margin:0px;
+scroll-behavior: smooth;
+
 }
 .oursite {max-width: 1200px;
 margin:auto;
 }
-
+#head{
+   scroll-behavior: smooth;
+}
 .navbar{
     position: fixed;
     scroll-behavior: smooth;
@@ -26,12 +31,13 @@ margin:auto;
     width: 100%;
     background-color: #3d3d3d;
     background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  
 }
 .navbar a{
     color:white;
     font-size: 20px;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 .navbar a:hover:{
    
@@ -53,7 +59,7 @@ margin:auto;
 #myVideo {
     position: relative;
     right: 0;
-    margin-bottom: 500px;
+    margin-bottom: 0px;
     min-width: 100%;
     min-height: 100%;
     max-height:100%;
@@ -70,7 +76,11 @@ margin:auto;
     
 
   }
-  /* Add some content at the bottom of the video/page */
+#aboutSpace{
+   height:10px;
+}
+
+
   .content {
     position: absolute;
     bottom: 50%;
@@ -79,27 +89,67 @@ margin:auto;
     width: 100%;
     padding: 20px;
   }
-  
-  /* Style the button used to pause/play the video */
-  #myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-  }
-  #myBtn:hover {
-    background: #ddd;
-    color: black;
-  }
   /* //////////END OF COVER VIDEO//////////*/
- 
 
+  .aboutUs h2{
+     
+     font-size: 45px;
+     font-family: sans-serif;
+  }
+ .aboutUs p{
+    color:black;
+    font-family: sans-serif;
+ }
+ .reviewpics{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:5px;
+    padding-top:40px;
+    justify-content: space-around;
+    justify-items: center;
+    border-radius: 5px;
+    background-color: #626570;
+background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-3.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    margin-bottom: 50px;
+    
+ }
+ .reviewpics p{
+    color:white;
+ }
+ .capone{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+ }
+
+ .dillinger{
+   display: flex;
+   flex-direction: column;
+   width:300px;
+ }
+ .escobar{
+   display: flex;
+   flex-direction: column;
+   width:300px;
+ }
+.reviewpics img{
+   
+   border: 3px solid black;
+
+   height:300px;
+   width:300px;
+}
 
   /*///////////BEGINNING OF MENU ////////////*/
-
+.shopimage img{
+   height:900px;
+   width:1200px;
+}
+  #menuSpace{
+   height:60px;
+   
+}
   #menu{
       width:100%;
       text-align: center;
@@ -111,7 +161,9 @@ margin:auto;
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     padding-top:20px;
     padding-bottom: 20px;
-    box-shadow: #3d3d3d;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    
   }
 .paper{
     background-color: #595e69;
