@@ -232,14 +232,12 @@ justify-content: center;
  max-height: 400px;
  padding: 5px;
  filter: grayscale(100%);
- transition: 1s;}
+ transition: 1s;
+}
 
  #gallery img:hover {
     filter: grayscale(0);
-    transform: scale(1.1);
-
-
-    
+    transform: scale(1.1);  
  }
  .form {width: 50%;
  position: relative;
@@ -413,3 +411,8 @@ div iframe:hover {
 iframe {
 filter: grayscale(100%);
 }
+
+#newletter h1 {font-family: cursive;
+margin-bottom: 0;}
+
+#newlettersub {margin-bottom: 0;}
