@@ -89,16 +89,57 @@ margin:auto;
     width: 100%;
     padding: 20px;
   }
+  .txt-type > .txt {
+   border-right: 0.2rem solid #777;
+   padding-right:2px;
+   animation: blinkTextCursor 500ms steps(40) infinite normal;
+   text-decoration: underline  #3d3d3d;
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255,255,255 .8);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+.welcome{
+   font-size: 55px;
+}
+.deli{
+   display: flex;
+   align-items: baseline;
+}
+.deli h2{
+   font-size: 55px;
+}
+.deli p{
+   font-size: 80px;
+   text-decoration: underline #3d3d3d;
+   margin:0;
+   margin-left: 10px;
+}
   /* //////////END OF COVER VIDEO//////////*/
-
+.aboutStory{
+   background-color: #626570;
+   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-3.png");
+   margin-bottom: 50px;
+   border-radius: 5px;
+   padding-left:10px;
+  
+   
+}
   .aboutUs h2{
-     
+   color:rgba(254, 255, 240, 0.973);
      font-size: 45px;
      font-family: sans-serif;
+     text-decoration: underline #3d3d3d;
   }
  .aboutUs p{
-    color:black;
+   color:rgba(254, 255, 240, 0.973);
     font-family: sans-serif;
+    padding-bottom: 10px;
+    width:1000px;
  }
  .reviewpics{
     display: grid;
@@ -115,7 +156,7 @@ background-image: url("https://www.transparenttextures.com/patterns/concrete-wal
     
  }
  .reviewpics p{
-    color:white;
+   color:rgba(254, 255, 240, 0.973);
  }
  .capone{
     display: flex;
@@ -237,10 +278,32 @@ justify-content: center;
  #gallery img:hover {
     filter: grayscale(0);
     transform: scale(1.1);
-
-
-    
  }
+/*   ////////////BLOG POST/////////*/
+.blog{
+   background-color: #626570;
+   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-3.png");
+   margin-bottom: 30px;
+   
+   border-radius: 5px; 
+}
+.blog p{
+   color:white;
+   width: 800px;
+   margin:auto;
+   padding-bottom: 8px;
+   font-size: 20px;
+}
+.blog h2{
+   color:white;
+   width:800px;
+   margin-bottom: 20px;
+   text-decoration: underline #3d3d3d;
+   padding-left: 5px;
+   font-size: 35px;
+}
+    
+ 
  .form {width: 50%;
  position: relative;
  height: 50px;

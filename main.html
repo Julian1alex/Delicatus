@@ -10,6 +10,9 @@
     <title>Documnt</title>
 </head>
 <body>
+        <audio autoplay>
+            <source
+        src="./assets/audio_hero_A-Street-In-France_SIPML_T-0105.mp3"  type="audio/ogg"></audio>
     <div id="head"class="header">
          
         <div class="navbar">
@@ -19,7 +22,7 @@
             <div class="head"><a href="#head"><img src="./assets/logo.png"></a></div>
             <div><a href="#gallery">Cuisine</a></div>
             
-            <div><a href="#location">Location</a></div>
+            <div><a href="#map">Location</a></div>
         </div>
     </div>
     <!-- The video -->
@@ -30,8 +33,12 @@
     
     <!-- Optional: some overlay text to describe the video -->
     <div class="content">
-        <h1>Delicatus</h1>
-        <p>Si pauper fueris, foras!</p>
+        <h1 class="welcome"> Welcome to
+            <span class="txt-type" data-wait="2000" data-words='["Culture", "Extravagance", "Lavish", "The magnificent", "Home"]'></span>
+    </h1>
+        <h2 class="deli"><p>Delicatus</p></h2>
+</div>
+
     
     </div>
     <div class="oursite">
@@ -39,24 +46,30 @@
             <section id="about">
                 <div class="aboutUs">
                     <div id="aboutSpace"></div>
+                    <div class="aboutStory">
                     <h2>Our Story</h2>
                     <h4></h4>
                     <p>It all started in a quiet stormy little part of italy. One day a man said "hey, I got an idea!" "We can make a wonderful falafal with our ingredients for breakfast burritos!" So he was off to it, he traveled all over the world to source the finest of ingredients to use in a grand restaurant.</p>
                     <p>Over the years, through hard work and several world wars, the restaurant came to be known as the place to be by the many who visited the land.</p>
                     <p>Many people from all walks of life would travel hundreds of miles just to experience the food that was being prepared by the master chef. Many of those traveled on horseback.</p>
                     <p>We have been lucky enough to be visited by several people of fame. some of those include the likes of...</p>
+                    </div>
                     <div class="reviewpics">
                         <div class="capone">
                     <img src="./assets/alCapone.jpeg"/>
                         <p>"I say, I do delcare this restaurant to be on of the finest establishments in the area."</p>
+                        <p> </p>
+                        <p>Al Capone</p>
                         </div>
                         <div class="dillinger">
                             <img src="./assets/johnDillinger.jpeg"/>
                             <p>"It's a mighty fine place to lay low while waitin' for johnny law to cool off and move on. I have never before been met with such hospitable folk."</p>
+                            <p>John Dillinger</p>
                         </div>
                         <div class="escobar">
                             <img src="./assets/pabloEscobar.jpeg"/>
                             <p>"Digo que siempre que esté en Italia estará en mi lista de lugares para parar. una ciudad tan maravillosa y un establecimiento aún mejor."</p>
+                            <p>Pablo Escobar</p>
                         </div>
                     </div>
                 </div>
@@ -94,9 +107,16 @@
                 </div>
             </section> 
         </div>
+        <div class="blog">
+            <h2 class="blogHead">This week in Delicatus news...</h2>
+            <p>&ensp;&ensp;&ensp;&ensp;&ensp;Famous athlete and comedian Joe Dimaggio showed up with his entourage to eat and socialize. Throughout the night he was reported to have said <em>"That's one spicy meatball!"</em> </p>
+            <p>&ensp;&ensp;&ensp;&ensp;&ensp;He regailed other patrons with his stories of baseball and also some very amusing jokes. He added his signed photograph to the wall of celebrities and world leaders that have frequented Delicatus in the past. Along side some of the most iconic people in the world.</p>
+            <p>&ensp;&ensp;&ensp;&ensp;&ensp;The Italian times reported "That was a night to remember!"</p>
+            <p></p>
+        </div>
         <div class="footer">
             <section id="footer1">
-
+                <div id="map"></div>
                 <div><iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ37HL3ry3t4kRv3YLbdhpWXE&key=AIzaSyCjzP3vfmcAnn3-l1f6wCGyCUkTW3LQq-Y" allowfullscreen></iframe></div>
 
                 
@@ -145,11 +165,8 @@
                 </div></div>
             </div>
         </div>
-        <audio autoplay>
-            <source src="assets/sounds.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-        <audio id="audio"src="assets/sounds.mp3" preload="auto"loop="loop"></audio>
+        
+        
     </div>      
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
