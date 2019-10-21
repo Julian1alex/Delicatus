@@ -10,7 +10,11 @@ html {
 body {font-family: sans-serif;
 margin:0px;
 scroll-behavior: smooth;
-
+width: 100%;
+}
+html, body {
+   max-width: 100%;
+   overflow-x: hidden;
 }
 .oursite {max-width: 1200px;
 margin:auto;
@@ -33,14 +37,22 @@ margin:auto;
     background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
   
 }
-.navbar a{
+.navbar div a{
     color:white;
     font-size: 20px;
     text-decoration: none;
     scroll-behavior: smooth;
-}
-.navbar a:hover:{
+    transition: scale .5s ease, background-color .5s ease, text-decoration .5s ease, color .5s ease,border-radius .5s ease ;
    
+}
+
+.navbar div a:hover{
+    scale:(1.5);
+    background-color: white;
+    text-decoration: underline #3d3d3d;
+    color: black;
+    border-radius: 5px;
+    
 }
 
 .head img{
@@ -49,9 +61,11 @@ margin:auto;
     background-color: white;
     border-radius: 25px;
     transition: border-radius .4s ease;
+    padding:0;
 }
 .head img:hover{
     border-radius: 0px;
+    padding:0px;
 }
 
 /*  ///////////////HEADER VIDEO/////////*/
@@ -93,7 +107,7 @@ margin:auto;
    border-right: 0.2rem solid #777;
    padding-right:2px;
    animation: blinkTextCursor 500ms steps(40) infinite normal;
-   text-decoration: underline  #3d3d3d;
+   
 }
 @keyframes blinkTextCursor {
   from {
@@ -139,7 +153,7 @@ margin:auto;
    color:rgba(254, 255, 240, 0.973);
     font-family: sans-serif;
     padding-bottom: 10px;
-    width:1000px;
+    
  }
  .reviewpics{
     display: grid;
