@@ -7,14 +7,18 @@ html {
 *, * ::before, *::after { 
     box-sizing: inherit;
 }
-body {font-family: sans-serif;
+body {
+   font-family: sans-serif;
 margin:0px;
 scroll-behavior: smooth;
+max-width: 100%;
 
 }
-.oursite {max-width: 1200px;
+.oursite {
+max-width: 1200px;
 margin:auto;
 }
+
 #head{
    scroll-behavior: smooth;
 }
@@ -31,16 +35,17 @@ margin:auto;
     width: 100%;
     background-color: #3d3d3d;
     background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
-  
 }
+
 .navbar a{
     color:white;
     font-size: 20px;
     text-decoration: none;
     scroll-behavior: smooth;
 }
-.navbar a:hover:{
-   
+
+.navbar a:hover {
+   text-shadow: 0px -2px 0px #000000, 0 0 5px rgba(255, 255, 255, 0.8), 0 -4px 15px rgba(255, 255, 255, 0.5);
 }
 
 .head img{
@@ -56,6 +61,7 @@ margin:auto;
 
 /*  ///////////////HEADER VIDEO/////////*/
 /* Style the video: 100% width and height to cover the entire window */
+
 #myVideo {
     position: relative;
     right: 0;
@@ -66,6 +72,7 @@ margin:auto;
     max-width:100%;
     background: rgba(0, 0, 0, 0.5);
   }
+
   .cover{
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
@@ -73,9 +80,8 @@ margin:auto;
     min-width: 100%;
     z-index: 10;
     top:55px;
-    
-
   }
+
 #aboutSpace{
    height:10px;
 }
@@ -89,12 +95,14 @@ margin:auto;
     width: 100%;
     padding: 20px;
   }
-  .txt-type > .txt {
+
+.txt-type > .txt {
    border-right: 0.2rem solid #777;
    padding-right:2px;
    animation: blinkTextCursor 500ms steps(40) infinite normal;
    text-decoration: underline  #3d3d3d;
-}
+   }
+
 @keyframes blinkTextCursor {
   from {
     border-right-color: rgba(255,255,255 .8);
@@ -103,9 +111,11 @@ margin:auto;
     border-right-color: transparent;
   }
 }
+
 .welcome{
    font-size: 55px;
 }
+
 .deli{
    display: flex;
    align-items: baseline;
@@ -113,6 +123,7 @@ margin:auto;
 .deli h2{
    font-size: 55px;
 }
+
 .deli p{
    font-size: 80px;
    text-decoration: underline #3d3d3d;
@@ -120,27 +131,35 @@ margin:auto;
    margin-left: 10px;
 }
   /* //////////END OF COVER VIDEO//////////*/
-.aboutStory{
+
+  .aboutStory{
    background-color: #626570;
    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-3.png");
    margin-bottom: 50px;
    border-radius: 5px;
    padding-left:10px;
-  
-   
 }
+
+.aboutStory h2{display: flex;
+justify-content: center;}
+
+.aboutStory h2 p {display: flex;
+justify-content: center;}
+
   .aboutUs h2{
    color:rgba(254, 255, 240, 0.973);
      font-size: 45px;
      font-family: sans-serif;
      text-decoration: underline #3d3d3d;
   }
+
  .aboutUs p{
    color:rgba(254, 255, 240, 0.973);
     font-family: sans-serif;
     padding-bottom: 10px;
     width:1000px;
  }
+
  .reviewpics{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -153,11 +172,12 @@ margin:auto;
 background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-3.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     margin-bottom: 50px;
-    
  }
+
  .reviewpics p{
    color:rgba(254, 255, 240, 0.973);
  }
+
  .capone{
     display: flex;
     flex-direction: column;
@@ -169,28 +189,24 @@ background-image: url("https://www.transparenttextures.com/patterns/concrete-wal
    flex-direction: column;
    width:300px;
  }
+
  .escobar{
    display: flex;
    flex-direction: column;
    width:300px;
  }
-.reviewpics img{
-   
-   border: 3px solid black;
 
+.reviewpics img{
+   border: 3px solid black;
    height:300px;
    width:300px;
 }
 
   /*///////////BEGINNING OF MENU ////////////*/
-.shopimage img{
-   height:900px;
-   width:1200px;
-}
   #menuSpace{
    height:60px;
-   
 }
+
   #menu{
       width:100%;
       text-align: center;
@@ -204,8 +220,8 @@ background-image: url("https://www.transparenttextures.com/patterns/concrete-wal
     padding-bottom: 20px;
     box-shadow: 0 0 10px black;
     border-radius: 5px;
-    
   }
+
 .paper{
     background-color: #595e69;
 background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
@@ -215,6 +231,7 @@ margin:auto;
 margin-top:25px;
 margin-bottom: 25px;
 }
+
   #appetizers{
       padding-bottom: 15px;
       text-align: center;
@@ -223,16 +240,18 @@ margin-bottom: 25px;
       font-size: 80px;
       text-decoration: underline;
   }
+  
   .title{
-    
     font-family: baskerville;
     text-decoration: underline;
     font-size: 25px;
     padding-bottom: 5px;
   }
+
   .price{
       padding-bottom: 15px;
   }
+
   .description i{
      margin-left: 5px;
   }
@@ -241,32 +260,11 @@ margin-bottom: 25px;
 
   /* Gallery */
   
- .footer { display: grid;
-    grid-template-columns: "map, reserve, icons";
-    width: 1200px;
-    background-color: #595959;
-
-    background-image: url("https://www.transparenttextures.com/patterns/white-tiles.png");}
- 
- .footer1 {
-    background-image: url("https://www.transparenttextures.com/patterns/white-tiles.png");
- }
-
- .footer2 {
-    display: flex;
-
-
- }
-
- .footer3 {
-    display: flex;
-
-
- }
 
  #gallery {margin: 10px;
 display: flex;
 justify-content: center;
+overflow: hidden;
 }
 
  #gallery img {max-width: 400px;
@@ -278,17 +276,13 @@ justify-content: center;
 
  #gallery img:hover {
     filter: grayscale(0);
-
-    transform: scale(1.1);  
-
-
+    transform: scale(1.1);
  }
 /*   ////////////BLOG POST/////////*/
 .blog{
    background-color: #626570;
    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-3.png");
    margin-bottom: 30px;
-   
    border-radius: 5px; 
 }
 .blog p{
@@ -308,10 +302,11 @@ justify-content: center;
 }
     
  
- .form {width: 50%;
- position: relative;
- height: 50px;
- overflow: hidden;
+ .form {
+   width: 50%;
+   position: relative;
+   height: 50px;
+   overflow: hidden;
  }
  .form input {
     width: 100%;
@@ -348,7 +343,7 @@ justify-content: center;
     transition: all 1s ease;
  }
  .form input:focus + .label-email .content-email,
- .form input:hover + .label-email .content-email{
+ .form input:hover + .label-email .content-email {
     transform: translateY(-150%);
     font-size: 15px;
     color: blue;
@@ -356,13 +351,13 @@ justify-content: center;
  .form input:focus + .label-email::after,
  .form input:hover + .label-email::after {
     transform: translateX(0%);
-
  }
 
 
 /* Input animations */
 
-.form {width: 50%;
+.form {
+   width: 100%;
    position: relative;
    height: 50px;
    overflow: hidden;
@@ -375,6 +370,7 @@ justify-content: center;
       border:none;
       outline: none;
       background: none;
+      font-size: 20px;
    }
    .form label {
       position: absolute;
@@ -392,7 +388,7 @@ justify-content: center;
       bottom: -1px;
       height: 100%;
       width: 100%;
-      border-bottom: 3px solid steelblue;
+      border-bottom: 3px solid red;
       transform: translateX(-100%);
       transition: all .75s ease;
    }
@@ -406,19 +402,22 @@ justify-content: center;
    .form input:hover + .label-email .content-email{
       transform: translateY(-150%);
       font-size: 15px;
-      color: blue;
+      color: red;
    }
    .form input:focus + .label-email::after,
    .form input:hover + .label-email::after {
       transform: translateX(0%);}
 
 
- /*  Flip Animation */
+ /* Social Animation */
  
-.items {display: flex;
-   justify-content: center;}
+.items {
+   display: flex;
+   justify-content: center;
+}
 
-.items div {width: 50px;
+.items div {
+   width: 50px;
    height: 50px;
    border-radius: 50%;
    display: flex;
@@ -440,6 +439,7 @@ justify-content: center;
    background: blue;
    filter: grayscale(100%);
  transition: .1s;
+ margin-bottom: 5px;
 
 }
 
@@ -447,18 +447,24 @@ justify-content: center;
    background: lightblue;
    filter: grayscale(100%);
  transition: 1s;
+ margin-bottom: 5px;
+
 }
 
 .flipcardy { 
    background: red;
    filter: grayscale(100%);
  transition: 1s;
+ margin-bottom: 5px;
+
 }
 
 
 .flipcardi { background: purple;
    filter: grayscale(100%);
  transition: 1s;
+ margin-bottom: 5px;
+
 
 }
 
@@ -481,7 +487,57 @@ iframe {
 filter: grayscale(100%);
 }
 
-#newletter h1 {font-family: cursive;
-margin-bottom: 0;}
+#newletter h2 {
+   font-family: cursive;
+margin-bottom: 0;
+display: flex;
+justify-content: center;
+font-size: 40px;
+}
 
-#newlettersub {margin-bottom: 0;}
+#newlettersub {
+   margin-bottom: 0;
+}
+
+button {
+   justify-content: center;
+   margin-top: 10px;
+   height: 30px;
+   width: 200px;
+   font-size: 15px;
+}
+
+button:hover {background: red;}
+
+ .column {
+   float: left;
+   width: 50%;
+   padding: 10px;
+ }
+ 
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ #buttons {display: flex;
+justify-content: center;}
+
+h3:hover {
+   color:red;
+}
+
+h2:hover {
+   text-shadow: 0px -2px 0px red, 0 0 5px rgba(255, 255, 255, 0.8), 0 -4px 15px rgba(255, 255, 255, 0.5);
+
+}
+
+p {font-size: 35px;}
+
+#special {margin-top: 25px;
+filter: grayscale(100%);
+transition: 1s;}
+  
+  #special:hover {
+      filter: grayscale(0);}
