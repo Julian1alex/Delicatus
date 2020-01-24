@@ -52,18 +52,10 @@ margin:auto;
 }
 
 .navbar a:hover {
-   text-shadow: 0px -2px 0px #000000, 0 0 5px rgba(255, 255, 255, 0.8), 0 -4px 15px rgba(255, 255, 255, 0.5);
+   text-decoration-line: underline; color: white;
 
 }
 
-.navbar div a:hover{
-    scale:(1.5);
-    background-color: white;
-    text-decoration: underline #3d3d3d;
-    color: black;
-    border-radius: 5px;
-    
-}
 
 .head img{
     height: 50px;
